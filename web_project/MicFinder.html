@@ -20,10 +20,10 @@
 
         body {
             font-family: 'Titillium Web', sans-serif;
-            background-image: url('background2.PNG');
-            background-position-x: left;
-            background-position-y: center;
-            background-repeat: no-repeat;
+            background-image : url('background2.PNG');
+            background-position-x : left;
+            background-position-y : center;
+            background-repeat : no-repeat;
         }
 
         li {
@@ -37,6 +37,7 @@
         img {
             border: 0;
         }
+
     </style>
     <!-- 헤더 -->
     <style>
@@ -87,10 +88,11 @@
                     display: block;
                     padding: 2px 10px;
                     border: 1px solid #868fb5;
+                    
                 }
 
                     #main_gnb > ul > li > a:hover {
-                        background: #c7c4e4;
+                        background:#c7c4e4;
                         color: white;
                     }
 
@@ -115,7 +117,7 @@
                 #main_lnb > ul > li > a {
                     display: block;
                     padding: 10px 20px;
-                    border: 1px solid #868fb5;
+                    border: 1px solid #868fb5 ;
                 }
 
                     #main_lnb > ul > li > a:hover {
@@ -139,16 +141,19 @@
             margin: 0 auto;
             /* 수평 레이아웃 구성 */
             overflow: hidden;
+            
         }
 
             #content > #main_section {
                 width: 710px;
                 float: left;
+                
             }
 
             #content > #main_aside {
                 width: 240px;
                 float: right;
+                
             }
     </style>
     <!-- 본문 -->
@@ -165,6 +170,7 @@
             top: 400px;
             right: 0px;
         }
+
     </style>
     <!-- 사이드 -->
     <style>
@@ -194,7 +200,7 @@
                 display: block;
             }
 
-        /* 세 번째 탭 */
+            /* 세 번째 탭 */
         input:nth-of-type(3) {
             display: none;
         }
@@ -244,6 +250,9 @@
             background: #c7c4e4;
             color: white;
         }
+
+
+
     </style>
     <!-- 목록 -->
     <style>
@@ -252,6 +261,7 @@
             padding: 10px;
             border: 1px solid #868fb5;
             border-top: none;
+            
         }
 
         .thumbnail {
@@ -327,39 +337,47 @@
     <div id="content">
         <section id="main_section">
             <article class="main_article">
-                <h1>Shure SM58</h1>
-                <ul type="circle">
-                    <li>○ 집음 주파수 : 50 ~ 15000 Hz</li>
-                    <li>○ 지향성 : Cardioid</li>
-                    <li>○ 임피던스 : 150 Ω</li>
-                    <li>○ 연결단자 : 3-pin , XLR-type (무선 타입은 SLX나 PGX2 같은 수신기의 이름이 붙는다.)</li>
-                    <li>○ 크기: 162 x 51 x 23 mm (길이, 마이크돔 지름, 손잡이 지름)</li>
-                    <li>○ 중량 : 298 g</li>
-                </ul>
-                    <audio src="Shure SM58.MP3" controls></audio>
+                <h1>Dynamic Mic</h1>
+                <p>
+                    <img src="./dynamic.PNG" style="width:30%; height:30%; float : left; margin: 10px 10px 10px 10px" />
+                    보통 막대기 위에 하나의 공이 달린것 같이 생겼다. 이러한 구체는 안의 캡슐을 보호하는
+                    역할을 하며 일명 팝핑(Popping) 이펙트를 감쇄시키는 역할을 하기도 한다.<br />
+                    다이나믹 마이크는 견고하고 쓸 수 있는 용도의 범위가 아주 다양해 범용성으로는 다른 타입들에 비해 높은 점수를
+                    받고 있다. <br />
+                    따라서, 라이브 공연때나 레코딩용등 어떤 용도에서도 안정적인 성능을 보여준다.
+                    상대적으로 저렴하기도 하며 또한, 디스토션 없이 고 출력의 음량을 받아들일 수 있다.<br />
+                    기타 앰프나 드럼 등 다양한 리얼 악기들의 녹음에 쓰이고도 있다.
+                </p>
             </article>
             <article class="main_article">
-                <h1>Audio-Technica AT2020</h1>
-                <ul type="circle">
-                    <li>○ 지향성 : Cardioid</li>
-                    <li>○ 임피던스 : 100 Ω</li>
-                    <li>○ 스위치 유/무 : 없음</li>
-                    <li>○ 케이블 유/무 : 없음</li>
-                    <li>○ 주파수대역 : 20Hz to 20 khz</li>
-                    <li>○ 전원 공급 : +48v</li>
-                </ul>
-                <audio src="AT2020.MP3" controls></audio>
+                <h1>Condenser Mic</h1>
+                <p>
+                    <img src="./condenser.PNG" style="width:30%; height:30%; float : left; margin: 10px 10px 10px 10px" />
+                    마이크에 달려있는 칸막이(diaphragm)의 크기에 따라 톤을 바꿀 수 있다.(디테일 혹은 따뜻함)
+                    일반적으로 콘덴서 마이크는 깔끔하고 중립적이며 정확한 사운드를 들려주는 것들이 대부분이다.<br />
+                    다양한 주파수들을 정확히 받아들여 주지만 특히 살짝은 고주파수 대에 민감하다고 볼 수 있다.
+                    많은 컨덴서 마이크는 극점(polarity) 바꿀 수 있는 옵션을 제공하고 있다.<br />
+                    그리고 꼭 그런것은 아니지만 보통 콘덴서 마이크의 구조상 다른 타입의 마이크에 비해 가격대가 비싼 경우가 많다.<br />
+                    또한 건전지나 48V의 팬텀 파워가 필요한 경우가 대부분이다.(팬텀 파워는 많은 오디오 인터페이스 및 믹싱보드에서 지원한다.)<br />
+                    어쿠스틱 악기나 보컬 등 디테일을 살려야 하는 악기들의 녹음에 유리하다.<br />
+                    또한 콘덴서 마이크는 Tube 혹은 Fet 방식으로 나뉜다.
+                    (fet보다 tube 마이크가 좀 더 소리가 굵으며 따뜻한 경향이 있다.)
+                </p>
             </article>
             <article class="main_article">
-                <h1>Senheiser MD42</h1>
-                <ul type="circle">
-                    <li>○ 지향성 : Cardioid</li>
-                    <li>○ 임피던스 : 350 Ω</li>
-                    <li>○ 연결단자 : XLR-3</li>
-                    <li>○ 주파수대역 : 40Hz - 18000Hz</li>
-                    <li>○ 중량 : 360g</li>
-                </ul>
-                <audio src="heiser.MP3" controls></audio>
+                <h1>Ribbon Mic</h1>
+                <p>
+                    <img src="./ribbon.PNG" style="width:30%; height:350px; float : left; margin: 10px 10px 10px 10px" />
+                    리본 마이크는 사실상 매끄러운 소리의 그리고 미묘한 소리의 다이나믹 마이크라고 볼 수 있다.<br />
+                    50년대의 3차원 빈티지 사운드를 상기시키며 고주파수 대역이 많은 브라스 사운드나 소리가
+                    비교적 고음이 많이 귀에 거슬릴 수 있는 소리들을 녹음할 때 그힘을 발휘한다.(상대적으로 낮은 고주파수 감도)
+                    낮은 아웃풋 레벨을 보여줌으로서 상대적으로 높은 프리앰프의 게인을 필요로 한다.(노이즈가 좀 많을 수도 있다.) <br />
+                    가까운 거리에서 리본 마이크를 이용할 시 특유의 따뜻함을 이끌어 낼 수 있으나 그에대한 부작용으로
+                    베이스 부밍 현상이 있을 수 있다.<br />
+                    노이즈가 쉽게 낄 수 있어 외부 환경에서 이용하는 것은 좋지 않으며 손상되기 쉬운 구조로 사용할 때 조심히 다루어야 한다.<br />
+                    가격대가 낮은편은 아니다.
+                    그외에도 USB와 바로 DAW혹은 오디오 편집 프로그램에 바로 연결할 수 있는 USB마이크 등이 존재한다.
+                </p>
             </article>
         </section>
         <aside id="main_aside">
@@ -376,7 +394,7 @@
                     <li class="item">
                         <a href="https://smartstore.naver.com/tbmall/products/4483790531?NaPm=ct%3Djvjchqwo%7Cci%3D571b13a0e2111588a17084cd31648fe641d406e6%7Ctr%3Dslc%7Csn%3D424651%7Cic%3D%7Chk%3D29cf783b35ad0fd3f387ebb931cd36f798aec722" target=_blank>
                             <div class="thumbnail">
-                                <img src="./go.PNG" style="width:30px; height:30px;" />
+                                <img src="./go.PNG" style="width:30px; height:30px;"/>
                             </div>
                             <div class="description">
                                 <strong>Shure SM58-CN</strong><p> 최저가 11만원 </p>
@@ -478,12 +496,12 @@
     <div id="right_bar">
         <a href=#Top>
             <img src="./음표.PNG" style="width:50px; height:50px;" />
-            <p style="color:black; font-family:'Titillium Web', sans-serif;"> top </p>
+                 <p style="color:black; font-family:'Titillium Web', sans-serif;" > top </p >
         </a>
 
     </div>
     <footer id="main_footer">
-        <h3>음원 출처 : YOUTUBE </h3>
+        <h3>준비중</h3>
     </footer>
 </body>
 </html>
